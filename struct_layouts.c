@@ -29,9 +29,11 @@ int main(int argc, char **argv) {
   arr1 = (struct st1 *) malloc(sizeof(st1) * n);  
   arr2 = (struct st2 *) malloc(sizeof(st2) * n);
 
+  printf("\n");
   printf("--- layout for struct (float,double,float) ---\n");
   s = (long int) &arr1[0].f1;
   printf("Starting address: %ld\n", s);
+  printf("Offsets for elements of array of structs\n");
   for (i=0; i<n; i++) {
     printf("%5d: %5ld %5ld %5ld\n", i,
 	   (long int) &arr1[i].f1 - s, 
@@ -43,6 +45,7 @@ int main(int argc, char **argv) {
   printf("--- layout for struct (float,float,double) ---\n");
   s = (long int) &arr2[0].f1;
   printf("Starting address: %ld\n", s);
+  printf("Offsets for elements of array of structs\n");
   for (i=0; i<n; i++) {
     printf("%5d: %5ld %5ld %5ld\n", i,
 	   (long int) &arr2[i].f1 - s, 
