@@ -100,4 +100,8 @@ int main(int argc, char **argv) {
   }
   printf("\n");
 
+  free(arr1);
+  free(arr2);
+  free(arr3);
+  free(arr4);
 }
