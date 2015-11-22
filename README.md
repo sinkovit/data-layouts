@@ -1,3 +1,3 @@
 # data-layouts
 
-This repository contains simple examples showing how the ordering of elements in a C struture affect the layout in memory. Fortran examples will be coming shortly
+This repository contains simple examples showing how the ordering of elements in C strutures and Fortran user defined types affect the layout in memory.
